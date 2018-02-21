@@ -13,18 +13,25 @@ h2.ejemplo{
   height: 40px;
 }
 
-#colores{
+#colores > ul >li {
   background-color: yellow;
   color:red;
   font-size: 2em;
 }
 
 #orange{
-  color: orange;
+  color: orange !important;
 }
 #green{
 color: green;
 }
 #red{
 color: red;
+}
+a[href='codigofacilito.com']{
+  color: red;
+}
+
+a[class='ejemplo']{
+  color: green;
 }
