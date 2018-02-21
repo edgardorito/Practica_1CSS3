@@ -1,18 +1,30 @@
+/*S debe ordernar alfabeticament*/
+/*Que sea facil de entender*/
+/*Selectores de Etiqueta*/
 h1,p{
   color: green;
+  font-family: Arial;
   text-align: center;
+}
+a[href='codigofacilito.com']{
+  color: red;
+}
+/* Esta linea afecta a todas las etiquetas a con la clase ejemplo*/
+a[class='ejemplo']{
+  color: green;
+}
+
+/*Selectores de Clase*/
+h2.ejemplo{
+  color: white;
+  height: 40px;
 }
 
 .ejemplo{
   background-color: blue;
   height: 20px;
 }
-
-h2.ejemplo{
-  color: white;
-  height: 40px;
-}
-
+/*Selectores de ID*/
 #colores > ul >li {
   background-color: yellow;
   color:red;
@@ -27,11 +39,4 @@ color: green;
 }
 #red{
 color: red;
-}
-a[href='codigofacilito.com']{
-  color: red;
-}
-
-a[class='ejemplo']{
-  color: green;
 }
