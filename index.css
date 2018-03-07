@@ -1,8 +1,8 @@
 body{
   background-image: url("my_friend.jpg"); /* Imagen de fondo */
+  background-repeat:  no-repeat;
   /* background-repeat:  no-repeat;  No se repite la imagen
   background-repeat:  repeat-x; Se repite la imagen solo en la posicion X
   background-repeat:  repeat-y; Se repite la imagen en la posicion Y
   */
-  background-color: black; /*Color de fondo */
 }
