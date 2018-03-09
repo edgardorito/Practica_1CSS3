@@ -1,23 +1,8 @@
-body{
-  background-image: url("my_friend.jpg"); /* Imagen de fondo */
-  background-repeat:  no-repeat;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  background: repeating-radial-gradient(circle,red,yellow 10%,green 15%); Gradientes
-
-  /*
-  Gradientes
-  background: radial-gradient(circle,red 10%,yellow 15%,green);
-  background: repeating-linear-gradient(-80deg,red,yellow 10%,green 20%);
-  background: linear-gradient(to bottom, green,yellow,red,blue);
-  background-size: contain; Porcentaje y pixeles
-  background-position: center top; Se puede centrar de esta forma o con porcentaje */
-
-  /* background-repeat:  no-repeat;  No se repite la imagen
-  background-repeat:  repeat-x; Se repite la imagen solo en la posicion X
-  background-repeat:  repeat-y; Se repite la imagen en la posicion Y
-  */
-}
-.space{
-  height: 600px;
+/* Colores en CSS
+Color names
+*/
+h1{
+  /*background-color: cyan;*/
+  background-color: #D2691E; /* Hexadecimal*/
+  color: darkgreen;
 }
