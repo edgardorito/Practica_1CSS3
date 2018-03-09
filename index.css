@@ -1,8 +1,6 @@
-/* Colores en CSS
+/* Colores en CSS con HSL
 Color names
 */
 h1{
-  /*background-color: cyan;*/
-  background-color: #D2691E; /* Hexadecimal*/
-  color: darkgreen;
+  background-color: hsl(18, 100%, 50%);
 }
