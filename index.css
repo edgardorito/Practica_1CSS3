@@ -2,5 +2,7 @@
 Color names
 */
 h1{
-  background-color: hsl(18, 100%, 50%);
+/*  background-color: hsl(18, 100%, 50%);
+*/  background-color: hsla(18, 100%, 50%,0.2);
+
 }
