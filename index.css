@@ -3,6 +3,13 @@ Color names
 */
 h1{
 /*  background-color: hsl(18, 100%, 50%);
-*/  background-color: hsla(18, 100%, 50%,0.2);
+    background-color: #2175FF;
+    border: inset rgba(0,0,0,0.7) 5px; none, inset, hidden, dotted, dash, solid, double
+    border-top-style: dashed;
+    border-bottom-color: red;
+*/
+    background-color: hsla(18, 100%, 50%,.5);
+    border:solid #eee 10px;
+    border-radius: 25px;
 
 }
