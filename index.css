@@ -1,6 +1,11 @@
 /* Colores en CSS con HSL
 Color names
 */
+
+body{
+  font-size: 100%;
+}
+
 h1{
 /*  background-color: hsl(18, 100%, 50%);
     background-color: #2175FF;
@@ -8,8 +13,26 @@ h1{
     border-top-style: dashed;
     border-bottom-color: red;
 */
+    text-shadow: 2px 2px 2px black ;/*La posición horizontal (negativos y positivos), posY, blur, color */
     background-color: hsla(18, 100%, 50%,.5);
-    border:solid #eee 10px;
+    border:double #eee 10px;
     border-radius: 25px;
-
+    text-align: center;
+    font-family: 'Mina', sans-serif;
+    font-style: italic;
+    font-size: 1em; /* 40px / 16 = 2.5 o 50%*/
+    color: white;
 }
+/*
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+p{
+  text-align: center;
+
+
+  word-spacing: 30cm; -12px
+  white-space: pre-wrap; Utilizar pre-line
+}
+*/
