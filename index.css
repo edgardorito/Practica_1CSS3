@@ -24,16 +24,31 @@ h1{
     color: white;
 }
 
-.myfriend{
-  position: absolute;; /*fixed, absolute*/
+.cat{
+  position: relative;;; /*fixed, absolute*/
+  border-radius: 10px;
   margin: 10px;
+}
+
+.gopher{
+  border: double 2px red;
+  border-radius: 50%;
 }
 
 .title{
   width: 100px;
   margin: auto;
 }
+.thumb{
+  margin: 10px;
+  border: 5px solid #ddd;
+  width: 150px;
+}
 
+.thumb:hover{
+  box-shadow: 0 2px 1px rgba(0, 140, 186, .8);
+  width: 200px;
+}
 .container{
   position: relative;
   border: 1px solid red;
