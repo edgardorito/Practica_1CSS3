@@ -23,6 +23,23 @@ h1{
     font-size: 1em; /* 40px / 16 = 2.5 o 50%*/
     color: white;
 }
+
+.myfriend{
+  position: absolute;; /*fixed, absolute*/
+  margin: 10px;
+}
+
+.title{
+  width: 100px;
+  margin: auto;
+}
+
+.container{
+  position: relative;
+  border: 1px solid red;
+  height: 100px;
+  padding: 10px 5px 10px 5px;
+}
 /*
 a{
   text-decoration: none;
