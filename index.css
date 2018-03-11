@@ -4,67 +4,165 @@ Color names
 
 body{
   font-size: 100%;
+  background-color: #eee;
 }
 
-h1{
-/*  background-color: hsl(18, 100%, 50%);
-    background-color: #2175FF;
-    border: inset rgba(0,0,0,0.7) 5px; none, inset, hidden, dotted, dash, solid, double
-    border-top-style: dashed;
-    border-bottom-color: red;
-*/
-    text-shadow: 2px 2px 2px black ;/*La posición horizontal (negativos y positivos), posY, blur, color */
-    background-color: hsla(18, 100%, 50%,.5);
-    border:double #eee 10px;
-    border-radius: 25px;
-    text-align: center;
-    font-family: 'Mina', sans-serif;
-    font-style: italic;
-    font-size: 1em; /* 40px / 16 = 2.5 o 50%*/
-    color: white;
-}
-
-.cat{
-  position: relative;;; /*fixed, absolute*/
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.gopher{
-  border: double 2px red;
-  border-radius: 50%;
-}
-
-.title{
-  width: 100px;
-  margin: auto;
-}
-.thumb{
-  margin: 10px;
-  border: 5px solid #ddd;
-  width: 150px;
-}
-
-.thumb:hover{
-  box-shadow: 0 2px 1px rgba(0, 140, 186, .8);
-  width: 200px;
-}
 .container{
   position: relative;
   border: 1px solid red;
   height: 100px;
   padding: 10px 5px 10px 5px;
 }
+h1{
+  /*  background-color: hsl(18, 100%, 50%);
+  background-color: #2175FF;
+  border: inset rgba(0,0,0,0.7) 5px; none, inset, hidden, dotted, dash, solid, double
+  border-top-style: dashed;
+  border-bottom-color: red;
+  */
+  text-shadow: 2px 2px 2px black ;/*La posición horizontal (negativos y positivos), posY, blur, color */
+  background-color: hsla(18, 100%, 50%,.5);
+  border:double #eee 10px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Mina', sans-serif;
+  font-style: italic;
+  font-size: 1em; /* 40px / 16 = 2.5 o 50%*/
+  color: white;
+}
+.responsive{
+  height: auto;
+  max-width: 100%;
+}
+
+.cat{
+  position: relative; /*fixed, absolute*/
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.gopher{
+  border-radius: 50%;
+}
+
+.title{
+  width: 300px;
+  margin: auto;
+}
+
+@keyframes skew {
+  0%{transform: skewX(-20deg)};
+  100%{transform: skewY(20deg)};
+}
+.polaroid img{
+  /*opacity: .4;
+  filter: blur(5px);
+  filter: brightness(.2);
+  filter: contrast(1.5);
+  filter: grayscale(1);
+  filter: hue-rotate(180deg);
+  filter: invert(.2);
+  filter: saturate(.2);*/
+  filter: sepia(.2);
+
+}
+.polaroid img:hover{
+  /* opacity: 1;
+  filter: blur(0);
+  filter: brightness(1);
+  filter: contrast(1);
+  filter: grayscale(.2);
+  filter: hue-rotate(360deg);
+  filter: invert(1);
+  filter: saturate(3);*/
+  filter: sepia(3);
+}
+
+div.polaroid{
+  position: relative;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  display:block;
+  transition: width 2s, transform .3s;
+  animation: skew 4s infinite alternate;
+  /* animation-name: skew;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; */
+  transition-delay: 1s;
+  animation-timing-function: ease-in;
+}
+
+.imgtext{
+ position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.texto{
+  text-align: center;
+}
+
+.cubo{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s, height 2s, transform 4s;
+  transition-timing-function: linear; /* linear (inicio lento, fin lento), ease (misma velocidad, rapido), ease-in (inicio rapid, fin rapido), ease-out (inicio rapido, fin lento), ease-in-out (lento) */
+}
+div.cubo:hover{
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+  animation-name: ejemplo;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes ejemplo {
+  /*
+  front{background-color: red}
+  to{background-color: yellow}*/
+  0%{background-color: red}
+  25%{background-color: orange}
+  50%{background-color: yellow}
+  100%{background-color: blue}
+}
+
 /*
+.thumb{
+margin: 10px;
+border: 5px solid #ddd;
+width: 150px;
+}
+/*
+div.polaroid:hover{
+width: 100px;
+transform: rotate(180deg);
+/*transform: translateX(50px); translateY,translateX
+transform: rotate(30deg);
+transform: scale(1.5,2), scaleX(1.5,2), scaleY(1.5,2)
+
+}
+
+.thumb:hover{
+box-shadow: 0 2px 1px rgba(0, 140, 186, .8);
+width: 200px;
+}
+
 a{
-  text-decoration: none;
-  text-transform: capitalize;
+text-decoration: none;
+text-transform: capitalize;
 }
 p{
-  text-align: center;
+text-align: center;
 
 
-  word-spacing: 30cm; -12px
-  white-space: pre-wrap; Utilizar pre-line
+word-spacing: 30cm; -12px
+white-space: pre-wrap; Utilizar pre-line
 }
 */
